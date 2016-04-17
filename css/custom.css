@@ -1,0 +1,540 @@
+/*--------------------------------------------*/
+/*----------------- Nav Menu -----------------*/
+/*--------------------------------------------*/
+
+#cssmenu {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: right;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 18px 11px 18px;
+  text-decoration: none;
+  color: #747474;
+  transition: all 0.3s ease-out;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  color: #00baef;
+}
+
+
+@media (max-width: 549px) {
+  #cssmenu {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  #cssmenu > ul {
+    width: 100%;
+    border: 1px 0 solid #ece6e8;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+    background: url('../img/menu.png') no-repeat;
+    background-position: 95% -35%;
+    text-align: left;
+    transition: all 0.3s ease-out;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    color: #00baef;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+    margin:0;
+  }
+  #cssmenu > ul li.active {
+    border-top: 1px solid #ece6e8;
+    border-bottom: 1px solid #ece6e8;
+  }
+  #cssmenu > ul li.has-sub {
+    border-bottom: 1px solid #ece6e8;
+  }
+}
+
+
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 550px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+
+/*--------------------------------------------*/
+/*-------------- Introductions ---------------*/
+/*--------------------------------------------*/
+
+.intros {
+	background-image: url("../img/covers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 15rem 0;
+	font-family: "Roboto Slab";
+}
+.intros h2, h6 {
+	padding:0;
+	margin: 0;
+	color:#fff;
+}
+
+/*--------------------------------------------*/
+/*---------------- Icon Hover ----------------*/
+/*--------------------------------------------*/
+
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 1em 0 0;
+}
+
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 15px 8px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-size: 30px;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Effect 5 */
+.hi-icon-effect-5 .hi-icon {
+	box-shadow: 0 0 0 2px rgba(255,255,255,1);
+	overflow: hidden;
+	text-decoration: none;
+	-webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.hi-icon-effect-5 .hi-icon:after {
+	display: none;
+}
+
+.hi-icon-effect-5 .hi-icon:hover {
+	background: rgba(255,255,255,1);
+	color: #00baef;
+	box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+}
+
+.hi-icon-effect-5a .hi-icon:hover:before {
+	-webkit-animation: toRightFromLeft 0.3s forwards;
+	-moz-animation: toRightFromLeft 0.3s forwards;
+	animation: toRightFromLeft 0.3s forwards;
+}
+
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		-webkit-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toRightFromLeft {
+	49% {
+		-moz-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toRightFromLeft {
+	49% {
+		transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+/*--------------------------------------------*/
+/*------------------ About -------------------*/
+/*--------------------------------------------*/
+
+.abouts {
+	background-color: #fff;
+	padding: 15rem 0;
+}
+.abouts h1,h2,h3,h4,h5 {
+	font-family: "Roboto Slab";
+	color: #404040;
+}
+.h-abouts {
+	text-align: center;
+	margin: 0 0 3rem 0;
+	border-bottom: 1px solid #eee;
+}
+.avatars img {
+	width: 100%;
+	border-radius: 50%;
+	padding: 0 0 0.5rem 0;
+}
+.avatars h5 {
+	text-align: center;
+	transition: all 0.3s ease-out;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.avatars p {
+	text-align: center;
+	font-size: 85%;
+	margin-bottom: 1rem;
+	color:#606060;
+}
+.avatars h5:hover {
+	color: #00baef;
+}
+.avatars button {
+	width: 100%;
+}
+.img-avatars {
+	width: 70%;
+	margin: 0 auto;
+}
+.skillbars p {
+	margin:0;
+	padding: 0 0 0.3rem 0;
+	color: #707070;
+	font-size: 85%;
+	text-align: right;
+}
+.skillbars {
+	padding: 0.5rem 0;
+}
+
+@media (max-width: 550px) {
+.img-avatars {
+	width: 70%;
+}
+}
+@media (min-width: 551px) and (max-width: 750px) {
+.img-avatars {
+	width: 100%;
+}
+}
+/*--------------------------------------------*/
+/*--------------- Progress Bar ---------------*/
+/*--------------------------------------------*/
+
+.meter { 
+	height: 8px;  /* Can be anything */
+	position: relative;
+	background: #eee;
+	padding: 7px;
+}
+
+.meter > span {
+	display: block;
+	height: 100%;
+	background-color: rgb(43,194,83);
+	position: relative;
+	overflow: hidden;
+}
+
+.meter > span:after, .animate > span > span {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 1;
+	overflow: hidden;
+}
+		
+.animate > span:after {
+	display: none;
+}
+		
+@-webkit-keyframes move {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
+}
+
+/*--------------------------------------------*/
+/*------------------ Works -------------------*/
+/*--------------------------------------------*/
+.works {
+	background-color: #eee;
+	padding: 15rem 0;
+}
+.works h1,h2,h3,h4,h5 {
+	font-family: "Roboto Slab";
+	color: #404040;
+}
+.h-works {
+	text-align: center;
+	margin: 0 0 3rem 0;
+	border-bottom: 1px solid #ddd;
+}
+.tab-works {
+	text-align: right;
+}
+.tab-works button {
+	margin: 0 0.5rem;
+	font-family: "Open Sans";
+	font-size: 60%;
+	padding: 0 2rem;
+	font-weight: normal;
+}
+@media (max-width: 550px) {
+.tab-works button {
+	width: 100%;
+	margin: 0.5rem 0;
+}
+}
+
+/*--------------------------------------------*/
+/*---------------- work List -----------------*/
+/*--------------------------------------------*/
+
+.grid {
+	margin: 3rem 0 0 0;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2c3f52;
+	color: rgba(255,255,255,0.4);
+}
+
+.grid figcaption h5 {
+	padding: 0 0 0 2rem;
+	margin: 1.5rem 0 0 0;
+	color: #fff;
+}
+
+.grid figcaption span {
+	font-size: 85%;
+	margin: 0;
+	padding: 0 0 0 2rem;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+	margin: 0;
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 8px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background-color: rgb(43,194,83);
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	margin: 0;
+	font-size: 85%;
+}
+
+
+.cs-style-3 figure {
+	overflow: hidden;
+}
+
+.cs-style-3 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+	-webkit-transform: translateY(-50px);
+	-moz-transform: translateY(-50px);
+	-ms-transform: translateY(-50px);
+	transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+	height: 100px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+	position: absolute;
+	bottom: 3.3rem;
+	right: 3rem;
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+.grid figcaption {
+	text-align: center;
+	background: rgba(44,63,82,0.8);
+}
+.grid figcaption h5 {
+	width: 100%;
+	padding: 0;
+	margin: 1.5rem 0 0 0;
+	color: #fff;
+}
+
+.grid figcaption span {
+	width: 100%;
+	font-size: 85%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+	margin: 0;
+}
+.grid figcaption a {
+	width: 80%;
+	padding: 0.6rem 0;
+	border-radius: 2px;
+	display: inline-block;
+	background-color: rgb(43,194,83);
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	margin: 0 10%;
+}
+.cs-style-3 figcaption {
+	height: 100%;
+}
+.cs-style-3 figcaption a {
+	bottom: 2rem;
+	right: 0;
+}
+}
+
+/*--------------------------------------------*/
+/*----------------- Contact ------------------*/
+/*--------------------------------------------*/
+.contacts {
+	background-color: #fff;
+	padding: 15rem 0;
+}
+.h-contacts {
+	text-align: center;
+	margin: 0 0 3rem 0;
+	border-bottom: 1px solid #eee;
+}
