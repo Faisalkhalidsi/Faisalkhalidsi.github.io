@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <link rel="stylesheet" href="css/adgrid.css">
 
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,6 +32,7 @@
   <script src="js/menu.js"></script>
   <script src="js/progressbar.js"></script>
   <script src="js/modernizr.custom.js"></script>
+  <script src="js/dialog.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,10 +43,10 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<div class="container">
-  <div class="row">
-    <div class="twelve columns">
+
+<div class="adcontainer">
+  <div class="adgrid">
+    <div class="adcol xs12 sm12 md12 lg12">
       <div id='cssmenu'>
         <ul>
            <li class='active'><a href='#'><span>Home</span></a></li>
@@ -58,8 +61,9 @@
 </div>
 
 <div class="intros">
-  <div class="container">
-  <div class="twelve columns">
+  <div class="adcontainer">
+  <div class="adgrid">
+  <div class="adcol xs12 sm12 md12 lg12">
     <div class="wow fadeInDown">
       <h6>Hello, I'm</h6>
       <h2>Andre Dezain</h2>
@@ -75,27 +79,42 @@
         </div></div>
   </div>
   </div>
+  </div>
 </div>
 
 <div class="abouts">
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
+  <div class="adcontainer">
+    <div class="adgrid">
+      <div class="adcol xs12 sm12 md12 lg12">
         <div class="h-abouts"><h2>About</h2></div>
       </div>
     </div>
-    <div class="row">
-      <div class="four columns">
+    <div class="adgrid">
+      <div class="adcol xs12 sm5 md4 lg4">
       	<div class="wow fadeInDown">
         <div class="avatars">
+
           <div class="wow rollIn"><div class="img-avatars"><img src="./img/andresp.jpg"/></div></div>
           <h5>Andre Sarizal Putra</h5>
           <p>Location: Padang, West Sumatra, Indonesia</p>
-          <button>View Profile</button>
+          <button class="kliks">View Profile</button>
+
+          <div class="adcol xs12 sm12 m12 lg12">
+            <dialog id="dialog" class="mdl-dialog">
+              <h3 class="mdl-dialog__title">My Profile</h3>
+                <div class="mdl-dialog__content">
+                  <p>Haloo... asal saya dari Padang, Sumatera Barat dan saat ini masih menjalankan studi S1 di Sistem Informasi Universitas Andalas. Saya suka cosplay, menjahit dan pastinya itu desain grafis.</p><p>LINE: andredezain</p>
+                </div>
+                <div class="mdl-dialog__actions">
+                  <button type="button" class="mdl-button" onclick="dialogclose()">Close</button>
+                </div>
+            </dialog>
+          </div>
+
         </div>
         </div>
       </div>
-      <div class="eight columns">
+      <div class="adcol xs12 sm7 md8 lg8">
         <div class="wow fadeInDown"><h4>Skill</h4></div>
           <div class="wow bounceInLeft"><div class="skillbars"><p>Graphic/Web Designs</p><div class="meter"><span style="width: 80%"></span></div></div></div>
           <div class="wow bounceInLeft"><div class="skillbars"><p>HTML/CSS</p><div class="meter"><span style="width: 90%"></span></div></div></div>
@@ -107,44 +126,22 @@
 </div>
 
 <div class="works">
-  <div class="container">
-    <div class="row">
-      <div class="twelve columns">
+  <div class="adcontainer">
+    <div class="adgrid">
+      <div class="adcol xs12 sm12 md12 lg12">
         <div class="h-works"><h2>Work</h2></div>
-        <div class="tab-works"><button>All</button><button>Logo</button><button>Web Design</button><button>Application</button></div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-            <div class="grid cs-style-3">
-              <li>
-              <figure>
-                <img src="img/work/agency.jpg"/>
-                <figcaption>
-                  <h5>Settings</h5>
-                  <span>Jacob Cummings</span>
-                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
-                </figcaption>
-              </figure>
-              </li>
-            </div>
-        </div>
-        <div class="one-half column">
-            <div class="grid cs-style-3">
-              <li>
-              <figure>
-                <img src="img/work/agency.jpg"/>
-                <figcaption>
-                  <h5>Settings</h5>
-                  <span>Jacob Cummings</span>
-                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
-                </figcaption>
-              </figure>
-              </li>
-            </div>
+        <div class="tab-works workzx">
+          <button class="button" data-filter="*">All</button>
+          <button class="button" data-filter=".logo">Logo</button>
+          <button class="button" data-filter=".web">Web Design</button>
+          <button class="button" data-filter=".card">Business Card</button>
         </div>
       </div>
-      <div class="row">
-        <div class="one-half column">
+
+      <div class="workbox">
+      <div class="workzxliz">
+
+        <div class="adcol xs12 sm12 md4 lg6 logo">
             <div class="grid cs-style-3">
               <li>
               <figure>
@@ -158,7 +155,8 @@
               </li>
             </div>
         </div>
-        <div class="one-half column">
+
+        <div class="adcol xs12 sm12 md4 lg6 logo">
             <div class="grid cs-style-3">
               <li>
               <figure>
@@ -172,60 +170,94 @@
               </li>
             </div>
         </div>
+
+        <div class="adcol xs12 sm12 md4 lg6 web">
+            <div class="grid cs-style-3">
+              <li>
+              <figure>
+                <img src="img/work/agency.jpg"/>
+                <figcaption>
+                  <h5>Settings</h5>
+                  <span>Jacob Cummings</span>
+                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                </figcaption>
+              </figure>
+              </li>
+            </div>
+        </div>
+
+        <div class="adcol xs12 sm12 md4 lg6 logo">
+            <div class="grid cs-style-3">
+              <li>
+              <figure>
+                <img src="img/work/agency.jpg"/>
+                <figcaption>
+                  <h5>Settings</h5>
+                  <span>Jacob Cummings</span>
+                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                </figcaption>
+              </figure>
+              </li>
+            </div>
+        </div>
+
+        <div class="adcol xs12 sm12 md4 lg6 web">
+            <div class="grid cs-style-3">
+              <li>
+              <figure>
+                <img src="img/work/agency.jpg"/>
+                <figcaption>
+                  <h5>Settings</h5>
+                  <span>Jacob Cummings</span>
+                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                </figcaption>
+              </figure>
+              </li>
+            </div>
+        </div>
+
+        <div class="adcol xs12 sm12 md4 lg6 card">
+            <div class="grid cs-style-3">
+              <li>
+              <figure>
+                <img src="img/work/agency.jpg"/>
+                <figcaption>
+                  <h5>Settings</h5>
+                  <span>Jacob Cummings</span>
+                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
+                </figcaption>
+              </figure>
+              </li>
+            </div>
+        </div>
+      
       </div>
-      <div class="row">
-        <div class="one-half column">
-            <div class="grid cs-style-3">
-              <li>
-              <figure>
-                <img src="img/work/agency.jpg"/>
-                <figcaption>
-                  <h5>Settings</h5>
-                  <span>Jacob Cummings</span>
-                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
-                </figcaption>
-              </figure>
-              </li>
-            </div>
-        </div>
-        <div class="one-half column">
-            <div class="grid cs-style-3">
-              <li>
-              <figure>
-                <img src="img/work/agency.jpg"/>
-                <figcaption>
-                  <h5>Settings</h5>
-                  <span>Jacob Cummings</span>
-                  <a href="http://dribbble.com/shots/1116685-Settings">Take a look</a>
-                </figcaption>
-              </figure>
-              </li>
-            </div>
-        </div>
       </div>
+
+    </div>
+
     </div>
   </div>
-</div>
 
 <div class="contacts">
-	<div class="container">
-    	<div class="row">
-      		<div class="twelve columns">
+	<div class="adcontainer">
+    	<div class="adgrid">
+      		<div class="adcol xs12 sm12 md12 lg12">
       			<div class="h-contacts"><h2>Contact</h2></div>
 	  		</div>
 	  	</div>
-	  	<div class="row">
-	  		<div class="six columns">
+	  	<div class="adgrid">
+	  		<div class="adcol xs12 sm6 md6 lg6">
       			<label>Your Name</label>
       			<input type="text" name="your_names" class="u-full-width" placeholder="Jhon Doe ..." required/>
 	  		</div>
-	  		<div class="six columns">
+	  		<div class="adcol xs12 sm6 md6 lg6">
       			<label>Your Email</label>
       			<input type="email" name="your_emails" class="u-full-width" placeholder="example@example.com ..." required/>
 	  		</div>
 	  	</div>
-	  	<div class="row">
-      		<div class="twelve columns">
+	  	<div class="adgrid">
+      		<div class="adcol xs12 sm12 md12 lg12">
       			<label> Your Message</label>
       			<textarea type="text" name="your_emails" class="u-full-width" placeholder="Hello World ..." required></textarea>
       			<button type="submit">Send</button>
@@ -241,5 +273,7 @@
   new WOW().init();
 </script>
 <script src="js/toucheffects.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/isotopex.js"></script>
 </body>
 </html>

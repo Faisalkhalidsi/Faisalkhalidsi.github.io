@@ -368,9 +368,19 @@
 /*--------------------------------------------*/
 /*---------------- work List -----------------*/
 /*--------------------------------------------*/
+.workbox {
+	display:block;
+	margin-top:30rem;
+}
+@media (min-width: 551px) {
+	.workbox {
+		display:block;
+		margin-top:16rem;
+	}
+}
 
 .grid {
-	margin: 3rem 0 0 0;
+	margin: 0;
 	list-style: none;
 	text-align: center;
 }
@@ -398,7 +408,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #2c3f52;
+	background: rgba(44,63,82,1);
 	color: rgba(255,255,255,0.4);
 }
 
