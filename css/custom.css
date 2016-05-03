@@ -360,8 +360,12 @@
 .works h5 {
 	font-size: 125%;
 	color: #fff;
-	padding:16px 0 0 0;
+	padding:18px 8px 0 0;
 	margin: 0 0 0 16px;
+}
+.works span {
+	display: block;
+	font-size: 90%;
 }
 .h-works {
 	text-align: center;
@@ -430,7 +434,7 @@
   max-width: 100%;
 }
 .grid-item button {
-	margin:8px 0 16px 16px;
+	margin:8px 16px 16px 16px;
 	color: #fff;
 	border-color: #fff;
 }
@@ -441,7 +445,7 @@
 .gridbox {
 	width: 100%;
 	background-color: #202020;
-	padding:0 0 10px 0;
+	padding:0 0 16px 0;
 }
 @media (min-width: 551px) and (max-width: 750px) {
 	.grid-sizer,
