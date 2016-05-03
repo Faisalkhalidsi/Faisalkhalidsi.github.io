@@ -416,7 +416,9 @@
 
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: calc(33.333333333333333% - 16px);
+  margin: 8px;
+  box-shadow: 0 0 3px #bbb;
 }
 
 .grid-item {
@@ -444,14 +446,14 @@
 @media (min-width: 551px) and (max-width: 750px) {
 	.grid-sizer,
 	.grid-item {
-	  width: 50%;
+	  width: calc(50% - 16px);
 	}
 }
 
 @media (max-width: 550px) {
 	.grid-sizer,
 	.grid-item {
-	  width: 100%;
+	  width: calc(100% - 16px);
 	}
 }
 .spaze {
