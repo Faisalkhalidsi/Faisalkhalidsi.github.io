@@ -120,7 +120,7 @@
 	background-attachment: fixed;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 15rem 0;
+	padding: 12rem 0;
 	font-family: "robotoslab";
 }
 .intros h2, h6 {
@@ -241,109 +241,21 @@
 	}
 }
 
-/*--------------------------------------------*/
-/*------------------ About -------------------*/
-/*--------------------------------------------*/
-
-.abouts {
-	background-color: #fff;
-	padding: 5rem 0;
-}
-.abouts h1,h2,h3,h4,h5 {
-	font-family: "robotoslab";
-	color: #404040;
-}
-.h-abouts {
-	text-align: center;
-	margin: 0 0 3rem 0;
-	border-bottom: 1px solid #eee;
-}
-.avatars img {
-	width: 100%;
-	border-radius: 50%;
-	padding: 0 0 0.5rem 0;
-}
-.avatars h5 {
-	text-align: center;
-	transition: all 0.3s ease-out;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-.avatars p {
-	text-align: center;
-	font-size: 85%;
-	margin-bottom: 1rem;
-	color:#606060;
-}
-.avatars h5:hover {
-	color: #00baef;
-}
-.avatars button {
-	width: 100%;
-}
-.img-avatars {
-	width: 55%;
-	margin: 0 auto;
-}
-.skillbars p {
-	margin:0;
-	padding: 0 0 0.3rem 0;
-	color: #707070;
-	font-size: 85%;
-	text-align: right;
-}
-.skillbars {
-	padding: 0.5rem 0;
+button.button-primary.viewpro {
+	background-color: transparent;
+	border: 0px solid rgba(255,255,255,0.6);
+	margin-top: 1rem;
+	color: rgba(255,255,255,0.6);
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "opensans";
+	transition: all 0.2s ease-out;
+	border-radius: 0;
 }
 
-@media (max-width: 550px) {
-.img-avatars {
-	width: 70%;
-}
-}
-@media (min-width: 551px) and (max-width: 750px) {
-.img-avatars {
-	width: 100%;
-}
-}
-/*--------------------------------------------*/
-/*--------------- Progress Bar ---------------*/
-/*--------------------------------------------*/
-
-.meter { 
-	height: 8px;  /* Can be anything */
-	position: relative;
-	background: #eee;
-	padding: 7px;
-}
-
-.meter > span {
-	display: block;
-	height: 100%;
-	background-color: rgb(43,194,83);
-	position: relative;
-	overflow: hidden;
-}
-
-.meter > span:after, .animate > span > span {
-	content: "";
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	z-index: 1;
-	overflow: hidden;
-}
-		
-.animate > span:after {
-	display: none;
-}
-		
-@-webkit-keyframes move {
-    0% {
-       background-position: 0 0;
-    }
-    100% {
-       background-position: 50px 50px;
-    }
+button.button-primary.viewpro:hover {
+	color: rgba(255,255,255,0.9);
+	border-top: 5px solid rgba(255,255,255,0.9);
 }
 
 /*--------------------------------------------*/
@@ -351,7 +263,7 @@
 /*--------------------------------------------*/
 .works {
 	background-color: #fff;
-	padding: 5rem 0;
+	padding: 10rem 0;
 }
 .works h1,h2,h3,h4,h5 {
 	font-family: "robotoslab";
