@@ -44,8 +44,8 @@
   display: inline-block;
   *display: inline;
   zoom: 1;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 #cssmenu > ul li a {
   display: block;
@@ -63,7 +63,7 @@
 @media (max-width: 549px) {
   #cssmenu {
     text-align: center;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
   #cssmenu > ul {
     width: 100%;
@@ -247,7 +247,7 @@
 
 .abouts {
 	background-color: #fff;
-	padding: 15rem 0;
+	padding: 5rem 0;
 }
 .abouts h1,h2,h3,h4,h5 {
 	font-family: "robotoslab";
@@ -282,7 +282,7 @@
 	width: 100%;
 }
 .img-avatars {
-	width: 70%;
+	width: 55%;
 	margin: 0 auto;
 }
 .skillbars p {
@@ -350,8 +350,8 @@
 /*------------------ Works -------------------*/
 /*--------------------------------------------*/
 .works {
-	background-color: #eee;
-	padding: 15rem 0;
+	background-color: #fff;
+	padding: 5rem 0;
 }
 .works h1,h2,h3,h4,h5 {
 	font-family: "robotoslab";
