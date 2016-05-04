@@ -30,10 +30,6 @@
   margin: 0;
   background: #ffffff;
   border: 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
 }
 #cssmenu > ul li#responsive-tab {
   display: none;
@@ -120,10 +116,12 @@
 	background-attachment: fixed;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 12rem 0;
+	padding: 15rem 0;
 	font-family: "robotoslab";
 }
-.intros h2, h6 {
+.intros h2, .intros h6 {
+	letter-spacing: normal;
+	font-weight: normal;
 	padding:0;
 	margin: 0;
 	color:#fff;
@@ -379,11 +377,14 @@ button.button-primary.viewpro:hover {
 /*----------------- Contact ------------------*/
 /*--------------------------------------------*/
 .contacts {
-	background-color: #fff;
-	padding: 15rem 0;
+	background-color: #202020;
+	padding: 0 0 1.5rem 0;
 }
-.h-contacts {
+.copyrights {
+	padding-top: 1.5rem;
+	border-top: 1px solid #303030;
+	color: #404040;
 	text-align: center;
-	margin: 0 0 3rem 0;
-	border-bottom: 1px solid #eee;
+	font-size: 90%;
+	text-shadow: -1px 1px 0 rgba(0,0,0,0.4);
 }
