@@ -287,9 +287,6 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 /*---------------- work List -----------------*/
 /*--------------------------------------------*/
-.tab-works {
-	overflow: auto;
-}
 .workbox {
 	display:block;
 }
