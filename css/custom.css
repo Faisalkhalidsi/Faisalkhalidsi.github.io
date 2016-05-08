@@ -264,7 +264,7 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 .works {
 	background-color: #fff;
-	padding: 5rem 0;
+	padding: 15rem 0;
 }
 .works h1,h2,h3,h4,h5 {
 	color: #404040;
@@ -287,17 +287,15 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 /*---------------- work List -----------------*/
 /*--------------------------------------------*/
-.workbox {
-	display:block;
-}
 .workzxliz {
 	padding-top: 1rem;
 }
-@media (min-width: 601px) {
-	.workbox {
-		padding-top:8rem;
-		margin: 0;
-	}
+.workbox {
+	padding-top:8rem;
+	margin: 0;
+}
+.tab-works {
+	overflow: auto;
 }
 
 /*---------grid---------*/
