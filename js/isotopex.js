@@ -17,3 +17,7 @@ $('.workzx').on( 'click', 'a', function() {
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
 });
+
+$('.special.cards .image').dimmer({
+  on: 'hover'
+});

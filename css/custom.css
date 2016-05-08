@@ -257,7 +257,7 @@
 .works h3 {
 	color: #fff;
 	padding:18px 8px 0 0;
-	margin: 0 0 0 16px;
+	margin: 0 0 0 20px;
 }
 .works span {
 	display: block;
@@ -265,7 +265,7 @@
 
 }
 .works button.ui.inverted.button {
-	margin: 12px 0 0 16px;
+	margin: 12px 0 12px 20px;
 	transition: all 0.3s ease-out;
 }
 .h-works {
@@ -288,7 +288,6 @@
 }
 
 /*---------grid---------*/
-
 .grid {
   background: #DDD;
 }
@@ -302,7 +301,6 @@
 .grid-item {
   width: calc(33.333333333333333% - 16px);
   margin: 8px;
-  box-shadow: 0 0 3px #bbb;
 }
 
 .grid-item {
