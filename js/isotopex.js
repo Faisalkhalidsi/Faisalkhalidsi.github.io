@@ -7,7 +7,9 @@ var $grid = $('.workzxliz').isotope({
   }
 });
 // filter items on button click
-$('.workzx').on( 'click', 'button', function() {
+$('.workzx').on( 'click', 'a', function() {
+	$(".item.active").removeClass("active");
+	$(this).addClass("active");
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });

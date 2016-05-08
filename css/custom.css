@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'opensans';
-  src: url('../fonts/opensans.ttf');
+  font-family: 'textnormal';
+  src: url('../fonts/lato-regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,10 +17,11 @@
 /*--------------------------------------------*/
 
 #cssmenu {
-  font-family: "opensans";
-  font-size: 10px;
+  font-family: "textnormal";
+  font-size: 90%;
+  font-weight: normal;
   line-height: 15px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: right;
 }
 #cssmenu > ul {
@@ -116,7 +117,7 @@
 	background-attachment: fixed;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 15rem 0;
+	padding: 10rem 0;
 	font-family: "robotoslab";
 }
 .intros h2, .intros h6 {
@@ -245,10 +246,12 @@ button.button-primary.viewpro {
 	margin-top: 1rem;
 	color: rgba(255,255,255,0.6);
 	font-weight: bold;
+	font-size: 90%;
 	text-decoration: none;
-	font-family: "opensans";
+	font-family: "textnormal";
 	transition: all 0.2s ease-out;
 	border-radius: 0;
+	letter-spacing: 1px;
 }
 
 button.button-primary.viewpro:hover {
@@ -261,58 +264,42 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 .works {
 	background-color: #fff;
-	padding: 10rem 0;
+	padding: 5rem 0;
 }
 .works h1,h2,h3,h4,h5 {
-	font-family: "robotoslab";
 	color: #404040;
 }
-.works h5 {
-	font-size: 125%;
+.works h3 {
 	color: #fff;
 	padding:18px 8px 0 0;
 	margin: 0 0 0 16px;
 }
 .works span {
 	display: block;
-	font-size: 90%;
+	font-size: 85%;
+
 }
 .h-works {
 	text-align: center;
 	margin: 0 0 3rem 0;
-	border-bottom: 1px solid #ddd;
-}
-.tab-works {
-	text-align: right;
-	display: block;
-}
-.tab-works button {
-	margin: 0 0.5rem;
-	font-family: "opensans";
-	font-size: 60%;
-	padding: 0 2rem;
-	font-weight: normal;
-}
-@media (max-width: 600px) {
-.tab-works button {
-	width: 100%;
-	margin: 0.5rem 0;
-}
 }
 
 /*--------------------------------------------*/
 /*---------------- work List -----------------*/
 /*--------------------------------------------*/
+.tab-works {
+	overflow: auto;
+}
 .workbox {
 	display:block;
-	margin-top:35rem;
 }
 .workzxliz {
 	padding-top: 1rem;
 }
 @media (min-width: 601px) {
 	.workbox {
-		margin-top:16rem;
+		padding-top:8rem;
+		margin: 0;
 	}
 }
 
@@ -343,21 +330,12 @@ button.button-primary.viewpro:hover {
   display: block;
   max-width: 100%;
 }
-.grid-item button {
-	margin:8px 16px 16px 16px;
-	color: #fff;
-	border-color: #fff;
-}
-.grid-item button:hover {
-	color:#ddd;
-	border-color: #ddd;
-}
 .gridbox {
 	width: 100%;
 	background-color: #202020;
 	padding:0 0 16px 0;
 }
-@media (min-width: 551px) and (max-width: 750px) {
+@media (min-width: 551px) and (max-width: 900px) {
 	.grid-sizer,
 	.grid-item {
 	  width: calc(50% - 16px);

@@ -19,8 +19,8 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/semantic.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/dialog.css">
@@ -29,6 +29,7 @@
   <!-- Javascript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/semantic.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/modernizr.custom.js"></script>
 
@@ -85,11 +86,15 @@
       <div class="adcol xs12 sm12 md12 lg12">
         <div class="h-works"><h2>Work</h2></div>
         <div class="tab-works workzx">
-          <button class="button" data-filter="*">All</button>
-          <button class="button" data-filter=".logo">Logo</button>
-          <button class="button" data-filter=".web">Website</button>
-          <button class="button" data-filter=".book">Book Cover</button>
-          <button class="button" data-filter=".card">Business Card</button>
+
+          <div class="ui secondary pointing menu">
+            <a class="item active" data-filter="*">All</a>
+            <a class="item" data-filter=".logo">Logo</a>
+            <a class="item" data-filter=".web">Website</a>
+            <a class="item" data-filter=".book">Book Cover</a>
+            <a class="item" data-filter=".card">Business Card</a>
+          </div>
+
         </div>
       </div>
 
@@ -101,8 +106,8 @@
           <div class="grid-item web">
             <img src="./img/work/web1.jpg" />
             <div class="gridbox">
-              <h5>GIS Fotokopi <span style="color:rgb(43,194,83)">Web Application</span></h5>
-              <button onclick="location.href='http://gisfaisal.in/andresp/'">View Work</button>
+              <h3>GIS Fotokopi <span style="color:rgb(43,194,83)">Web Application</span></h3>
+              <button class="ui gray basic button" onclick="location.href='http://gisfaisal.in/andresp/'">View Work</button>
             </div>
           </div>
         </div>
@@ -111,7 +116,7 @@
           <div class="grid-item web">
             <img src="./img/work/web2.jpg" />
             <div class="gridbox">
-              <h5>AD-Panel <span style="color:rgb(43,194,83)">Web Templates</span></h5>
+              <h3>AD-Panel <span style="color:rgb(43,194,83)">Web Templates</span></h3>
               <button onclick="location.href='http://andredezain.github.io/adpanel'">View Work</button>
             </div>
           </div>
@@ -121,7 +126,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo3.jpg" />
             <div class="gridbox">
-              <h5>E-VENTS <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>E-VENTS <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -130,7 +135,7 @@
           <div class="grid-item card">
             <img src="./img/work/card1.jpg" />
             <div class="gridbox">
-              <h5>High Chai <span style="color:rgb(43,194,83)">Business Card</span></h5>
+              <h3>High Chai <span style="color:rgb(43,194,83)">Business Card</span></h3>
               <button onclick="location.href='https://www.dropbox.com/s/51y8ntxbefyjvpm/High%20Chai%20Business%20Card%20Templates.rar?dl=0'">View Work</button>
             </div>
           </div>
@@ -140,7 +145,7 @@
           <div class="grid-item card">
             <img src="./img/work/card2.jpg" />
             <div class="gridbox">
-              <h5>Purple Knight <span style="color:rgb(43,194,83)">Business Card</span></h5>
+              <h3>Purple Knight <span style="color:rgb(43,194,83)">Business Card</span></h3>
               <button onclick="location.href='https://www.dropbox.com/s/w5rmyqraf99v0id/purple%20knight%20business%20card%20templates.rar?dl=0'">View Work</button>
             </div>
           </div>
@@ -150,7 +155,7 @@
           <div class="grid-item card">
             <img src="./img/work/card3.jpg" />
             <div class="gridbox">
-              <h5>Cote Azur <span style="color:rgb(43,194,83)">Business Card</span></h5>
+              <h3>Cote Azur <span style="color:rgb(43,194,83)">Business Card</span></h3>
               <button onclick="location.href='https://www.dropbox.com/s/dmcnvo71tszms3l/cote%20azur%20business%20card%20templates.rar?dl=0'">View Work</button>
             </div>
           </div>
@@ -160,7 +165,7 @@
           <div class="grid-item web">
             <img src="./img/work/web3.jpg" />
             <div class="gridbox">
-              <h5>Agency <span style="color:rgb(43,194,83)">Web Templates</span></h5>
+              <h3>Agency <span style="color:rgb(43,194,83)">Web Templates</span></h3>
               <button onclick="location.href='http://andredezain.github.io/agency'">View Work</button>
             </div>
           </div>
@@ -170,7 +175,7 @@
           <div class="grid-item card">
             <img src="./img/work/card4.jpg" />
             <div class="gridbox">
-              <h5>Hex Orange Light <span style="color:rgb(43,194,83)">Business Card</span></h5>
+              <h3>Hex Orange Light <span style="color:rgb(43,194,83)">Business Card</span></h3>
               <button onclick="location.href='https://www.dropbox.com/s/n9hz2a030bvgkg4/hex%20orange%20light%20-%20business%20card%20template.rar?dl=0'">View Work</button>
             </div>
           </div>
@@ -180,7 +185,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo4.jpg" />
             <div class="gridbox">
-              <h5>Toko Emi <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Toko Emi <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -189,7 +194,7 @@
           <div class="grid-item card">
             <img src="./img/work/card5.jpg" />
             <div class="gridbox">
-              <h5>Tri Colorful <span style="color:rgb(43,194,83)">Business Card</span></h5>
+              <h3>Tri Colorful <span style="color:rgb(43,194,83)">Business Card</span></h3>
               <button onclick="location.href='https://www.dropbox.com/s/z0gx9jnf4dx4wgp/tri%20colorful%20business%20card%20templates.rar?dl=0'">View Work</button>
             </div>
           </div>
@@ -199,7 +204,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo1.jpg" />
             <div class="gridbox">
-              <h5>Wyrm <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Wyrm <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -208,7 +213,7 @@
           <div class="grid-item book">
             <img src="./img/work/book1.jpg" />
             <div class="gridbox">
-              <h5>Buku Panduan Kuliah Kerja Nyata Universitas Andalas <span style="color:rgb(43,194,83)">Book Cover Design</span></h5>
+              <h3>Buku Panduan Kuliah Kerja Nyata Universitas Andalas <span style="color:rgb(43,194,83)">Book Cover Design</span></h3>
             </div>
           </div>
         </div>
@@ -217,7 +222,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo5.jpg" />
             <div class="gridbox">
-              <h5>Ghatering of Hotelier 2015 <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Ghatering of Hotelier 2015 <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -226,7 +231,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo6.jpg" />
             <div class="gridbox">
-              <h5>Lab. GIS Sistem Informasi Universitas Andalas <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Lab. GIS Sistem Informasi Universitas Andalas <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -235,7 +240,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo7.jpg" />
             <div class="gridbox">
-              <h5>Royal Gryphonite Cosplay Team <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Royal Gryphonite Cosplay Team <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
@@ -244,7 +249,7 @@
           <div class="grid-item book">
             <img src="./img/work/book2.jpg" />
             <div class="gridbox">
-              <h5>Buku Panduan Akademik Fakultas Teknologi Informasi Universitas Andalas <span style="color:rgb(43,194,83)">Book Cover Design</span></h5>
+              <h3>Buku Panduan Akademik Fakultas Teknologi Informasi Universitas Andalas <span style="color:rgb(43,194,83)">Book Cover Design</span></h3>
             </div>
           </div>
         </div>
@@ -253,7 +258,7 @@
           <div class="grid-item logo">
             <img src="./img/work/logo2.jpg" />
             <div class="gridbox">
-              <h5>Yukokku Coshop <span style="color:rgb(43,194,83)">Logo Design</span></h5>
+              <h3>Yukokku Coshop <span style="color:rgb(43,194,83)">Logo Design</span></h3>
             </div>
           </div>
         </div>
