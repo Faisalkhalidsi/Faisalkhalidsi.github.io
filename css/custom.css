@@ -295,7 +295,7 @@ button.button-primary.viewpro:hover {
 	margin: 0;
 }
 .tab-works {
-	overflow: auto;
+	overflow: hidden;
 }
 
 /*---------grid---------*/
