@@ -5,13 +5,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'robotoslab';
-  src: url('../fonts/robotoslab.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*--------------------------------------------*/
 /*----------------- Nav Menu -----------------*/
 /*--------------------------------------------*/
@@ -21,7 +14,6 @@
   font-size: 90%;
   font-weight: normal;
   line-height: 15px;
-  letter-spacing: 1px;
   text-align: right;
 }
 #cssmenu > ul {
@@ -118,7 +110,8 @@
 	text-transform: uppercase;
 	text-align: center;
 	padding: 10rem 0;
-	font-family: "robotoslab";
+	font-family: "textnormal";
+
 }
 .intros h2, .intros h6 {
 	letter-spacing: normal;
@@ -126,6 +119,12 @@
 	padding:0;
 	margin: 0;
 	color:#fff;
+}
+.intros h2 {
+	font-size: 280%;
+}
+.intros h6 {
+	font-size: 100%;
 }
 
 /*--------------------------------------------*/
@@ -240,23 +239,9 @@
 	}
 }
 
-button.button-primary.viewpro {
-	background-color: transparent;
-	border: 0px solid rgba(255,255,255,0.6);
+.intros button.ui.inverted.blue.basic {
 	margin-top: 1rem;
-	color: rgba(255,255,255,0.6);
-	font-weight: bold;
-	font-size: 90%;
-	text-decoration: none;
-	font-family: "textnormal";
-	transition: all 0.2s ease-out;
-	border-radius: 0;
-	letter-spacing: 1px;
-}
-
-button.button-primary.viewpro:hover {
-	color: rgba(255,255,255,0.9);
-	border-top: 5px solid rgba(255,255,255,0.9);
+	transition: all 0.5s ease-out;
 }
 
 /*--------------------------------------------*/
@@ -264,7 +249,7 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 .works {
 	background-color: #fff;
-	padding: 15rem 0;
+	padding: 5rem 0;
 }
 .works h1,h2,h3,h4,h5 {
 	color: #404040;
@@ -279,6 +264,10 @@ button.button-primary.viewpro:hover {
 	font-size: 85%;
 
 }
+.works button.ui.inverted.button {
+	margin: 12px 0 0 16px;
+	transition: all 0.3s ease-out;
+}
 .h-works {
 	text-align: center;
 	margin: 0 0 3rem 0;
@@ -287,15 +276,15 @@ button.button-primary.viewpro:hover {
 /*--------------------------------------------*/
 /*---------------- work List -----------------*/
 /*--------------------------------------------*/
+.tab-works {
+	overflow: auto;
+}
 .workzxliz {
 	padding-top: 1rem;
 }
 .workbox {
 	padding-top:8rem;
 	margin: 0;
-}
-.tab-works {
-	overflow: hidden;
 }
 
 /*---------grid---------*/
@@ -305,7 +294,6 @@ button.button-primary.viewpro:hover {
 }
 
 .grid:after {
-  content: '';
   display: block;
   clear: both;
 }
